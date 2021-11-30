@@ -1,0 +1,64 @@
+#education
+{
+    background-color: #ececec ;
+    padding:20px 0 70px 0 ;
+}
+
+/* Style education bloc */
+.bloc-education
+{
+    text-align: center;
+    background-color: #FFF;
+    width: 80%;
+    margin:0 auto;
+    padding: 20px 0;
+    border-radius: 10px;
+    border: 3px solid #272c60;
+    font-family: 'Poppins', sans-serif;
+    height: 320px;
+    box-shadow: 3px 3px 3px #272c60;
+    transition: all .4s linear;
+    animation-name: fadeInUp;
+}
+
+/*animation */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.bloc-education h4
+{
+    color: #ccc;
+    font-weight: bold;
+}
+
+.bloc-education svg
+{
+    color: #272c60;
+    font-size: 45px;
+}
+
+.bloc-education h2
+{
+    color: #de3448;
+    font-weight: bold;
+}
+
+.bloc-education h3 
+{
+    color: #272c60;
+    font-weight: bold;
+}
+
+.bloc-education h5
+{
+    color: #272c60;
+    font-size: 15px;
+}

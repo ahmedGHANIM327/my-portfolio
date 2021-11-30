@@ -1,0 +1,138 @@
+#experiences
+{
+    background-color: #ececec ;
+    padding:20px 0 70px 0 ;
+}
+
+/*left*/
+.experience-left
+{
+    display: block;
+    width: 67.5%;
+    margin-bottom: 20px;
+}
+
+.border-top 
+{
+    height: 15px;
+    background-color: #de3448;
+    border-radius: 0 10px 0 0;
+}
+
+/* Experience Content style */
+.experience-content
+{
+    height: fit-content;
+    width: 48%;
+    padding: 10px 0;
+    background-color: #272c60;
+    margin-right: 0;
+    margin-left: 52%;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+    animation-duration: 3s;
+    animation-name: slidein-left;
+}
+
+.experience-content h2
+{
+    margin: 0;
+    color: #de3448;
+}
+
+.experience-content>svg
+{
+    margin: 7px auto;
+    color: #de3448;
+    width: 100%;
+}
+
+.experience-content p
+{
+    color: #ccc;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience-content h3
+{
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*right*/
+.experience-right
+{
+    display: block;
+    width: 65%;
+    margin-left: 35%;
+    margin-bottom: 20px;
+}
+
+.experience-right .border-top 
+{
+    border-radius: 10px 0 0;
+}
+
+.experience-right .experience-content
+{
+    width: 50%;
+    background-color: #272c60;
+    margin-right: 25%;
+    margin-left: 0;
+    animation-name: slidein-right;
+}
+
+
+/* Style for mobile divice */
+@media only screen and (max-width: 700px) {
+    .experience-left
+    {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .experience-content
+    {
+        width: 78%;
+        margin-right: 0;
+        margin-left: 22%;
+    }
+
+    .experience-right
+    {
+        width: 85%;
+        margin-left: 17%;
+    }
+    
+    .experience-right .experience-content
+    {
+        width: 75%;
+        margin-right: 25%;
+        margin-left: 0;
+    }
+}
+
+/* animation style */
+@keyframes slidein-left {
+    from {
+      margin-left: -75%;
+    }
+  
+    to {
+        margin-left: 52%;
+    }
+}
+
+@keyframes slidein-right {
+    from {
+        margin-left: 175%;
+    }
+  
+    to {
+        margin-left: 0%;
+    }
+}

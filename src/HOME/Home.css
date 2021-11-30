@@ -1,0 +1,94 @@
+#home
+{
+    background-color: #272c60;
+    padding-bottom: 0 !important;
+    padding-top: 40px;
+}
+
+.home-name 
+{
+    color: #de3448;
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+
+}
+
+.home-description
+{
+    color : #FFF;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 35px;
+    margin-bottom: 0px;
+
+}
+
+.button-div
+{
+    display:flex;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.button-div>button{
+    font-family: 'Poppins', sans-serif;
+    font-size: large;
+    border:none;
+    font-weight: bold;
+}
+
+/* Style for Download button */
+.button-div>.download-button{
+    margin-right: 10px;
+    background-color: #de3448;
+    color: #FFF;
+}
+
+.button-div>.download-button:hover
+{
+    border: #de3448 2px solid;
+    color: #de3448;
+}
+
+/* Style for Contact button */
+.button-div>.contact-button{
+    margin-right: 10px;
+    background-color: transparent;
+    color: #de3448;
+    border: #de3448 2px solid;
+}
+
+.button-div>.contact-button:hover
+{
+    background-color: #de3448;
+    color: #FFF;
+}
+
+/* Style for mobile */
+@media screen and (max-width:700px)
+{
+    .home-description
+    {
+        font-size: 25px;
+    }
+
+    .home-name
+    {
+        font-size: 40px;
+    }
+
+    .about-div
+    {
+        margin-top: 100px !important;
+        margin-bottom: -55px !important;
+    }
+}
+
+
+/* Style for mobile */
+@media screen and (max-width:700px)
+{
+    #home img
+    {
+        width: 100%;
+    }
+}

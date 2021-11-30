@@ -1,0 +1,62 @@
+#projects
+{
+    padding:20px 0 70px 0 ;
+}
+
+/* Style for bloc project */
+.bloc-project
+{
+    background-color: #ececec;
+    border:none;
+    border-radius: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0 auto;
+    text-align: center;
+    box-shadow: 7px 7px 7px #ccc;
+}
+
+.bloc-project img
+{
+    background-size: cover;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px 10px 0 0;
+}
+
+.bloc-project h2>a
+{
+    color: #de3448;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.bloc-project h4
+{
+    color: #272c60;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -10px;
+    font-size: 20px;
+}
+
+.bloc-project button
+{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 15px;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: #272c60;
+    color: #FFF;
+    border-radius: 5px;
+    border: none;
+}
+
+.bloc-project button>a
+{
+    color: #FFF;
+    text-decoration: none;
+}

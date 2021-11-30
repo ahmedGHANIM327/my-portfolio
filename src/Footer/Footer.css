@@ -1,0 +1,37 @@
+#footer
+{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 25px;
+    height: 100px;
+}
+
+#footer a
+{
+    text-decoration: none;
+}
+
+#footer svg
+{
+    color: #de3448;
+    font-size: 45px;
+}
+
+#footer svg:hover
+{
+    font-size: 50px;
+}
+
+#footer p
+{
+    color: #fff;
+    font-size: 20px;
+}
+
+#footer p>a
+{
+    color: #de3448
+}

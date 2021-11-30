@@ -1,0 +1,48 @@
+/* style for Titles of Sections*/
+.title-section
+{
+    text-align: center;
+    font-size: 40px;
+    text-align: center;
+    
+    width: fit-content;
+    margin: 50px auto;
+    border: 3px #272c60 solid;
+    padding: 10px 20px;
+    color:#272c60;
+}
+
+
+/* Style for Tabs */
+.tabs-button
+{
+    margin-left: 5px !important;
+    color: #272c60 !important;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    width: fit-content;
+}
+
+.tabs-button.Mui-selected
+{
+    background-color: #de3448;
+    color:#FFF !important;
+    border-radius: 5px;
+}
+
+
+.MuiTabs-indicator
+{
+    display:none;
+}
+
+/* Style for mobile */
+@media screen and (max-width:700px)
+{
+    .title-section
+    {
+        font-size: 30px;
+        width: fit-content;
+    }
+}
