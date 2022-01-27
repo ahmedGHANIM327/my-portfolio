@@ -5,10 +5,10 @@ import SchoolIcon from '@mui/icons-material/School';
 export default function Education() {
     return (
         <div id="education">
-            <h1 className="skills-title title-section">Education</h1>
+            <h1 className="skills-title title-section" data-aos="zoom-in">Education</h1>
             <Grid container spacing={5} direction="row" justifyContent="space-evenly" alignItems="center">
                     <Grid item xs={12} sm={4} >
-                        <div className="bloc-education">
+                        <div className="bloc-education"  data-aos="zoom-out-up">
                             <h4>2016-2017</h4>
                             <SchoolIcon />
                             <h2>Mohamed 5 high school</h2>
@@ -17,7 +17,7 @@ export default function Education() {
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={4} >
-                        <div className="bloc-education">
+                        <div className="bloc-education"  data-aos="zoom-out-up">
                             <h4>2017-2019</h4>
                             <SchoolIcon />
                             <h2>CPGE Ibn-Baja Beni-Mellal</h2>
@@ -25,7 +25,7 @@ export default function Education() {
                         </div>
                     </Grid>
                     <Grid item xs={12} sm={4} >
-                        <div className="bloc-education">
+                        <div className="bloc-education"  data-aos="zoom-out-up">
                             <h4>2019-2022</h4>
                             <SchoolIcon />
                             <h2>INP-ENSEEIHT Toulouse</h2>

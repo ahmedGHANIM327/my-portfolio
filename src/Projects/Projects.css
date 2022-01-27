@@ -60,3 +60,8 @@
     color: #FFF;
     text-decoration: none;
 }
+
+.bloc-project:hover
+{
+    transform: scale(1.1);
+}

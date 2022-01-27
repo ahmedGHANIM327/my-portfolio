@@ -23,10 +23,10 @@ export default function Experiences() {
 
     return (
         <div id="experiences">
-            <h1 className="skills-title title-section">Professional Experiences</h1>
+            <h1 className="skills-title title-section" data-aos="zoom-in">Professional Experiences</h1>
             <div className="experience-left" >
                 <div className="border-top"></div>
-                <div className="experience-content">
+                <div className="experience-content" data-aos="fade-right" >
                     <WorkIcon /> 
                     <h2 >CAPGEMINI</h2>
                     <p><LocationOnIcon sx={{marginRight:"2px"}}/>Toulouse , France</p>
@@ -36,7 +36,7 @@ export default function Experiences() {
             </div>
             <div className={largeur>700 ? "experience-right" : "experience-left"}>
                 <div className="border-top"></div>
-                <div className="experience-content">
+                <div className="experience-content" data-aos={largeur>700 ? "fade-left" : "fade-right"} >
                     <WorkIcon /> 
                     <h2 >Capitole Formation</h2>
                     <p><LocationOnIcon sx={{marginRight:"2px"}}/>Toulouse , France</p>

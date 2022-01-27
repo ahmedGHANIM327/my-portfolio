@@ -24,7 +24,7 @@ export default function Skills() {
   };
     return (
         <div id="skills">
-            <h1 className="skills-title title-section">Skills</h1>
+            <h1 className="skills-title title-section" data-aos="zoom-in">Skills</h1>
             <Tabs
                 value={value}
                 onChange={handleChange}
@@ -60,7 +60,7 @@ export default function Skills() {
                 </div>   
             </TabPanel>
             <TabPanel value={value} index={1}>
-            <div className="skills-div">
+                <div className="skills-div">
                     <Grid container spacing={5} direction="row" justifyContent="center" alignItems="center">
                         <Grid item xs={12} sm={6} container justifyContent="center" alignItems="center" >
                             <img src={photo_mobile_dev} alt="Logo" title="ahmed ghanim - mobile development skills ( Android studio , XML , Firebase , MySQL , Java )"/>

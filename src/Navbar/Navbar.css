@@ -33,6 +33,7 @@ nav
     font-weight: bold;
     padding: 10px 15px;
     border-radius: 5px;
+    transition: all 0.5s;
 }
 .nav-items:hover
 {
@@ -63,6 +64,10 @@ nav
     padding-bottom: 1px;
 }
 
+.is-current
+{
+    background-color: rgb(222, 52, 72);
+}
 
 /* Style for mobile */
 @media screen and (max-width:700px)

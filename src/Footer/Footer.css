@@ -18,11 +18,12 @@
 {
     color: #de3448;
     font-size: 45px;
+    transition: transform 500ms;
 }
 
 #footer svg:hover
 {
-    font-size: 50px;
+    transform: scale(1.5);
 }
 
 #footer p

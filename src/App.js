@@ -7,8 +7,19 @@ import Experiences from './Experiences/Experiences';
 import Contact from './Contact/Contact'
 import Navbar from './Navbar/Navbar'
 import Footer from './Footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import {useEffect} from "react";
 
 function App() {
+
+  useEffect(() => {
+    AOS.init({
+      easing: 'ease-in-sine',
+      duration: 1000,
+      once : 'true',
+    });
+  },[]);
   return (
     <div>
       <Navbar />

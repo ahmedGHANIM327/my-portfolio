@@ -30,8 +30,6 @@
     margin-left: 52%;
     border-radius: 0 0 10px 10px;
     text-align: center;
-    animation-duration: 3s;
-    animation-name: slidein-left;
 }
 
 .experience-content h2
@@ -116,23 +114,3 @@
     }
 }
 
-/* animation style */
-@keyframes slidein-left {
-    from {
-      margin-left: -75%;
-    }
-  
-    to {
-        margin-left: 52%;
-    }
-}
-
-@keyframes slidein-right {
-    from {
-        margin-left: 175%;
-    }
-  
-    to {
-        margin-left: 0%;
-    }
-}

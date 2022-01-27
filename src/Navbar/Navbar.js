@@ -1,6 +1,7 @@
 import './Navbar.css';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useState, useEffect } from 'react';
+import Scrollspy from 'react-scrollspy'
 
 
 export default function Navbar() {
@@ -15,7 +16,7 @@ export default function Navbar() {
 
         window.scrollTo({
             left:0,
-            top:location - 70,
+            top:location-70,
         })
 
         setToggleMenu(false);
@@ -41,16 +42,18 @@ export default function Navbar() {
     return (
                 <nav>
                     {(toggleMenu || largeur>700) && (
-                        <ul className="nav-liste">
+                        <Scrollspy className='nav-liste' items={ ['home', 'skills', 'experiences','projects','education','contact'] } currentClassName="is-current" offset={-75}>
                             <li className="nav-items" ><a href="#home" onClick={handleClick}>Home</a></li>
                             <li className="nav-items" ><a href="#skills" onClick={handleClick}>Skills</a></li>
                             <li className="nav-items"><a href="#experiences" onClick={handleClick}>Experiences</a></li>
                             <li className="nav-items"><a href="#projects" onClick={handleClick}>Projects</a></li>
                             <li className="nav-items"><a href="#education" onClick={handleClick}>Education</a></li>
                             <li className="nav-items"><a href="#contact" onClick={handleClick}>Contact</a></li>
-                        </ul>
+                        </Scrollspy>
                     )}
                     <span className="button-menu" onClick={toggleNav}><MenuIcon /></span>
                 </nav>
+
+                
     )
 }
