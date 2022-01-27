@@ -4,13 +4,52 @@
     text-align: center;
     font-size: 40px;
     text-align: center;
-    
     width: fit-content;
     margin: 50px auto;
     border: 3px #272c60 solid;
     padding: 10px 20px;
     color:#272c60;
+    transition: all 1s;
 }
+
+h1.skills-title.title-section::after
+{
+    z-index: -10;
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0; 
+    height: 100%;
+    opacity: 0.2;
+    transition-duration: 0.8s;
+    background-color: #272c60;
+}
+
+h1.skills-title.title-section::before
+{
+    z-index: -10;
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 0; 
+    height: 100%;
+    opacity: 0.2;
+    transition-duration: 0.8s;
+    background-color: #272c60;
+}
+
+h1.skills-title.title-section:hover::after
+{
+    width: 50.1%;
+}
+
+h1.skills-title.title-section:hover::before
+{
+    width: 50%;
+}
+
 
 
 /* Style for Tabs */
