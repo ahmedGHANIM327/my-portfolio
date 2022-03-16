@@ -41,7 +41,7 @@ export default function Navbar() {
 
     return (
                 <nav>
-                    {(toggleMenu || largeur>700) && (
+                    {(toggleMenu || largeur>820) && (
                         <Scrollspy className='nav-liste' items={ ['home', 'skills', 'experiences','projects','education','contact'] } currentClassName="is-current" offset={-75}>
                             <li className="nav-items" ><a href="#home" onClick={handleClick}>Home</a></li>
                             <li className="nav-items" ><a href="#skills" onClick={handleClick}>Skills</a></li>

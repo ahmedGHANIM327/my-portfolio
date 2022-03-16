@@ -21,6 +21,7 @@
     "react-scrollspy": "^3.4.3",
     "react-scrollspy-highlight": "^1.0.1",
     "react-typed": "^1.2.0",
+    "swiper": "^8.0.7",
     "web-vitals": "^1.1.2"
   },
   "scripts": {

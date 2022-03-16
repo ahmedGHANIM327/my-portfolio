@@ -43,12 +43,14 @@ export default function Skills() {
                             <img src={photo_web_dev} alt="Logo" title="ahmed ghanim - web development skills ( Angular , React , Java/Jee , Wordpress , Drupal , MySQL , Firebase )"/>
                         </Grid>
                         <Grid item xs={12} sm={6} >
+                            <h4 className="skill-label">React 85%</h4>
+                            <ProgressBar valueProgress="85" />  
                             <h4 className="skill-label">Angular 75%</h4>
                             <ProgressBar valueProgress="75" />     
-                            <h4 className="skill-label">React 65%</h4>
-                            <ProgressBar valueProgress="65" />  
                             <h4 className="skill-label">Java/Jee 80%</h4>
                             <ProgressBar valueProgress="80" />  
+                            <h4 className="skill-label">Django 75%</h4>
+                            <ProgressBar valueProgress="75" />
                             <h4 className="skill-label">Wordpress 80%</h4>
                             <ProgressBar valueProgress="80" />       
                             <h4 className="skill-label">MySQL 90%</h4>
@@ -68,6 +70,8 @@ export default function Skills() {
                         <Grid item xs={12} sm={6} >
                             <h4 className="skill-label">Android Studio 70%</h4>
                             <ProgressBar valueProgress="70" />        
+                            <h4 className="skill-label">React Native 60%</h4>
+                            <ProgressBar valueProgress="60" /> 
                             <h4 className="skill-label">MySQL 90%</h4>
                             <ProgressBar valueProgress="90" />  
                             <h4 className="skill-label">Firebase 60%</h4>
@@ -89,7 +93,7 @@ export default function Skills() {
                             <ProgressBar valueProgress="100" />  
                             <h4 className="skill-label">English : Fluent (C1)</h4>
                             <ProgressBar valueProgress="80" /> 
-                            <h4 className="skill-label">English : Shool (A2)</h4>
+                            <h4 className="skill-label">Spanish : Shool (A2)</h4>
                             <ProgressBar valueProgress="40" />              
                         </Grid>
                     </Grid>
