@@ -16,8 +16,8 @@ export const ListProjects = [
         "short_desc":`My Portfolio is my personal website that I use as a digital CV 
                     to present my skills, my academic career, my professional experience,...`,
         "outils" : ["React","Material-UI"],
-        "live_preview" : "resume.ahmed-ghanim.com",
-        "code_source" : ""
+        "live_preview" : "https://resume.ahmed-ghanim.com",
+        "code_source" : "https://github.com/ahmedGHANIM327/my-portfolio"
     },
     {
         "id" : 1,
@@ -34,9 +34,9 @@ export const ListProjects = [
                         and Firebase for the storage of the media (photos and videos).`,
         "short_desc":`A project was realized during my second year in a team of 4 students. 
                     The objective of this website is to allow the artisans of the region of Toulouse...`,
-        "outils" : ["Angular","Material-UI","Java/JEE","MySQL","Firebase"],
-        "live_preview" : "resume.ahmed-ghanim.com",
-        "code_source" : "#"
+        "outils" : ["Angular","TypeScript","Material-UI","Java/JEE","MySQL","Firebase"],
+        "live_preview" : "",
+        "code_source" : "https://github.com/ahmedGHANIM327/artisan7"
     },
     {
         "id" : 2,
@@ -48,8 +48,8 @@ export const ListProjects = [
         "short_desc":`This is a website that I created during my internship at Capitole Formation with Wordpress and the DIVI theme.
                     The website is set up to present Capitole Formation's...`,
         "outils" : ["Wordpress","Divi","PHP","Javascript"],
-        "live_preview" : "#",
-        "code_source" : "#"
+        "live_preview" : "https://english-first.org/",
+        "code_source" : ""
     },
     {
         "id" : 3,
@@ -62,8 +62,8 @@ export const ListProjects = [
         "short_desc":`This is one of the first projects that I created to master the basics 
                     of web development, HTML, CSS, JavaScript, PHP, and MySQL.`,
         "outils" : ["PHP","Javascript","Bootstrap","MySQL"],
-        "live_preview" : "#",
-        "code_source" : "#"
+        "live_preview" : "",
+        "code_source" : "https://github.com/ahmedGHANIM327/Burger-Code"
     },
     {
         "id" : 4,
@@ -82,8 +82,8 @@ export const ListProjects = [
         "short_desc":`A project was realized during my last year in a team of 4 students. The objective 
                     of this application is to broadcast announcements to employees once a badge is detected...`,
         "outils" : ["React","Django","Material-UI","MySQL","Firebase","Arduino"],
-        "live_preview" : "#",
-        "code_source" : "#"
+        "live_preview" : "",
+        "code_source" : "https://github.com/ahmedGHANIM327/Arduino-Project"
     }
 
 ]
