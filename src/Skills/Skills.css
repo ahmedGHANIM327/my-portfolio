@@ -9,12 +9,24 @@
     color:#272c60;
     margin: 10px 0;
     margin-left : 5px;
-    font-family: 'Poppins', sans-serif;
+    font-family: "SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
 .skills-div
 {
     margin:30px 5% 0 5%;
+}
+
+span.skill_section_label
+{
+    color: #de3448;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    font-size: 12px;
+}
+
+span.margin_section {
+    margin-top: 40px;
+    display: block;
 }
 
 /* Style for mobile */

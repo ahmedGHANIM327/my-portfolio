@@ -1,6 +1,6 @@
 #footer
 {
-    background-color: #333;
+    background-color: #272c60;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -30,6 +30,8 @@
 {
     color: #fff;
     font-size: 20px;
+    font-weight: 600;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
 #footer p>a

@@ -1,64 +1,224 @@
 #education
 {
-    background-color: #ececec ;
-    padding:20px 0 70px 0 ;
+    background-color: #eee;
+    padding: 20px 0 70px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
-/* Style education bloc */
-.bloc-education
+/* New Code */
+.column_container .title_section
+{
+    width: 100%;
+    text-align: center;
+    font-size: 5rem;
+    padding-bottom: 10px;
+    margin-top: 15px;
+}
+
+.column_container .title_section::after
+{
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.column_container .toggle
+{
+    margin: 35px 0;
+}
+
+.column_container .toggle > div
+{
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.column_container .toggle button
+{
+    font-size: 22px;
+    padding: 10px 25px;
+    background-color: #f5efef;
+    color: #272c60;
+    font-weight: bold;
+    border-color: #272c60;
+    border-left: 1px solid #272c60 !important;
+    /*width: 220px;*/
+}
+
+.column_container .toggle button.Mui-selected
+{
+    background-color: #de3448;
+}
+
+/* Experiences Styles */
+#education .experiences
+{
+    margin-top: 25px;
+    width: 95%;
+    max-width: 1300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#education .experiences::after
+{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    background-color: #272c60;
+    top: 0;
+    left: 50%;
+    transform: translateX(50%);
+    z-index: 0;
+}
+
+#education .experience
 {
     text-align: center;
-    background-color: #FFF;
-    width: 80%;
-    margin:0 auto;
-    padding: 20px 0;
+    width: 40%;
+    padding: 15px 10px;
     border-radius: 10px;
-    border: 3px solid #272c60;
-    font-family: 'Poppins', sans-serif;
-    height: 320px;
-    box-shadow: 3px 3px 3px #272c60;
-    transition: all .4s linear;
-    animation-name: fadeInUp;
-}
-
-/*animation */
-@keyframes fadeInUp {
-    0% {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-.bloc-education h4
-{
-    color: #ccc;
-    font-weight: bold;
-}
-
-.bloc-education svg
-{
+    margin-bottom: 10px;
+    border: 2px solid #272c60;
     color: #272c60;
-    font-size: 45px;
+    transform: translateX(-50%);
+    margin-right: 100px;
 }
 
-.bloc-education h2
+#education .experience::before
 {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 2px;
+    background-color: #272c60;
+    top: 50%;
+    right: 0;
+    transform: translate(100%,-50%);
+}
+
+#education .experience::after
+{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #272c60;
+    border: 2px solid #272c60;
+    top: 50%;
+    right: -50px;
+    border-radius: 50%;
+    transform: translate(16px,-50%);
+    z-index: 999;
+}
+
+/* right block */
+#education .experience.right
+{
+    transform: translateX(50%);
+    margin-left: 100px;
+    margin-right: 0;
+}
+
+#education .experience.right::before
+{
+    left: 0;
+    transform: translate(-100%,-50%);
+}
+
+#education .experience.right::after
+{
+    left: -50px;
+    transform: translate(-10px,-50%);
+}
+
+/**/
+
+#education .experience h2{
+    font-size: 26px;
+    margin-block: 10px;
+}
+
+#education .experience h3{
+    font-size: 22px;
+    margin-block: 10px;
     color: #de3448;
-    font-weight: bold;
 }
 
-.bloc-education h3 
-{
-    color: #272c60;
-    font-weight: bold;
+#education .experience p{
+    text-align: center !important;
+    margin-block: 5px;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
 }
 
-.bloc-education h5
+@media screen and (max-width:850px)
 {
-    color: #272c60;
-    font-size: 15px;
+    .column_container .title_section
+    {
+        text-align: center;
+        font-size: 2rem;
+        
+    }
+
+    .column_container .toggle
+    {
+        margin: 20px 0;
+    }
+
+    .column_container .toggle button {
+        font-size: 15px;
+        padding: 10px 12px;
+        /*width: 150px;*/
+    }
+
+    #education .experiences
+    {
+        width: 100%;
+        align-items: flex-end;
+        max-width: 90%;
+    }
+
+    #education .experiences::after 
+    {
+        right: 0;
+        left: auto;
+        transform: translateX(0);
+    }
+
+    #education .experience , #education .experience.right
+    {
+        width: 80%;
+        transform: translateX(0);
+        margin-right: 30px;
+    }
+
+    #education .experience::before , #education .experience.right::before
+    {
+        width: 30px;
+        left: auto;
+        right: 0;
+        transform: translate(100%,-50%);
+    }
+
+    #education .experience::after , #education .experience.right::after
+    {
+        right: -29px;
+        left : auto;
+        transform: translate(13px,-50%);
+    }
+
+    #education .experience h2{
+        font-size: 22px;
+    }
+    
+    #education .experience h3{
+        font-size: 19px;
+    }
+
+    
 }

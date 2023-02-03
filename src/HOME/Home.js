@@ -8,18 +8,31 @@ import SendIcon from '@mui/icons-material/Send';
 import myresume from '../assets/GHANIM_AHMED_CV .pdf'
 
 export default function Home() {
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        const target = e.target.getAttribute('href');
+        const location = document.querySelector(target).offsetTop;
+
+        window.scrollTo({
+            left:0,
+            top:location-70,
+        })
+    }
+
     return (
 
         <div id="home">
                 <Grid container spacing={5} direction="row" justifyContent="space-evenly" alignItems="center">
                     <Grid item xs={12} md={6} className="about-div" style={{paddingleft:"105px " ,textAlign:"center"}}>
-                        <h4 className="home-description">Hi there , I am <span className="home-name">AHMED GHANIM</span></h4>
-                        <Typed className="home-description" strings={["Software Development Engenieer at CAPGEMINI ", "M2 Student at ENSEEIHT Toulouse"]} typeSpeed={30} backSpeed={50} loop />
+                        <p class="desc1">Hi, my name is</p>
+                        <h4 className="home-description"><span className="home-name">AHMED GHANIM</span></h4>
+                        <Typed className="home-description" strings={["Software Engineer at CAPGEMINI - Skywise Airbus ", "Full Stack Developer"]} typeSpeed={30} backSpeed={50} loop />
                         <div className="button-div">
                             <Button href={myresume} target="_blank" className="download-button" variant="outlined" endIcon={<DownloadIcon />}>
                                 Download Resume
                             </Button>
-                            <Button href="#contact" className="contact-button" variant="contained" endIcon={<SendIcon />}>
+                            <Button href="#contact" onClick={handleClick} className="contact-button" variant="contained" endIcon={<SendIcon />}>
                                 Contact Me
                             </Button>
                         </div>  

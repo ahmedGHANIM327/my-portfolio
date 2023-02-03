@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,300&display=swap');
 
 body
 {
@@ -8,4 +9,9 @@ body
 html
 {
   scroll-behavior: smooth;
+}
+
+*
+{
+  font-family: "Calibre","Inter","San Francisco","SF Pro Text",-apple-system,system-ui,sans-serif;
 }

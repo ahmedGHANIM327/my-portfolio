@@ -1,8 +1,10 @@
+
+
 /* style for Titles of Sections*/
 .title-section
 {
     text-align: center;
-    font-size: 40px;
+    font-size: clamp(25px, 5vw, 40px);;
     text-align: center;
     width: fit-content;
     margin: 50px auto;
@@ -38,6 +40,7 @@ h1.skills-title.title-section::before
     opacity: 0.2;
     transition-duration: 0.8s;
     background-color: #272c60;
+    font-weight: 600;
 }
 
 h1.skills-title.title-section:hover::after
@@ -58,7 +61,6 @@ h1.skills-title.title-section:hover::before
     margin-left: 5px !important;
     color: #272c60 !important;
     font-size: 15px;
-    font-family: 'Poppins', sans-serif;
     font-weight: 100;
     width: fit-content;
 }

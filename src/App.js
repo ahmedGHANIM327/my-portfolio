@@ -10,6 +10,7 @@ import Footer from './Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import {useEffect} from "react";
+import Social from './Social/Social';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
   },[]);
   return (
     <div>
+      <Social />
       <Navbar />
       <Home />
       <Skills />

@@ -14,7 +14,7 @@ export default function Footer() {
     return (
         <div id="footer">
             <a href="#home" onClick={handleClick}><ExpandLessIcon /></a>
-            <p >© Designed by <a href="https://ahmed-ghanim.com">ahmed-ghanim.com</a></p>
+            <p >© Built & Designed by <a href="https://ahmed-ghanim.com">ahmed-ghanim.com</a></p>
         </div>
     )
 }
