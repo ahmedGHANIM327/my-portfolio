@@ -5,7 +5,7 @@ import Typed from 'react-typed';
 import Button from '@mui/material/Button';
 import DownloadIcon from '@mui/icons-material/Download';
 import SendIcon from '@mui/icons-material/Send';
-import myresume from '../assets/GHANIM_AHMED_CV .pdf'
+import myresume from '../assets/Ahmed_GHANIM_CV_ENG.pdf'
 
 export default function Home() {
 

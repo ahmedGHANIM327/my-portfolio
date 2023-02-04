@@ -54,7 +54,7 @@ export default function Skills() {
                             <h4 className="skill-label">English : Fluent (C1)</h4>
                             <ProgressBar valueProgress="80" /> 
                             <h4 className="skill-label">Spanish : Shool (A1)</h4>
-                            <ProgressBar valueProgress="30" />  
+                            <ProgressBar valueProgress="20" />  
                             <h4 className="skill-label">Wordpress 90%</h4>
                             <ProgressBar valueProgress="90" />    
                             <h4 className="skill-label">SEO 70%</h4>
