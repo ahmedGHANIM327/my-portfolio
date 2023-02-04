@@ -83,7 +83,7 @@ h1.skills-title.title-section:hover::before
 {
     .title-section
     {
-        font-size: 30px;
+        font-size: 25px;
         width: fit-content;
     }
 }

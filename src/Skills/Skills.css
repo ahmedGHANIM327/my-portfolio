@@ -29,6 +29,38 @@ span.margin_section {
     display: block;
 }
 
+/* List Skills */
+.list_Skills
+{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.skill_item
+{
+    text-align: center;
+    padding: 15px;
+}
+
+.skill_item img
+{
+    filter: grayscale(100%);
+    transition: all 0.8s;
+    width: 120px;
+}
+
+.skill_item img:hover
+{
+    filter: grayscale(0);
+}
+.skill_item p
+{
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    color: #272c60;
+    font-size: 14px;
+}
 /* Style for mobile */
 @media screen and (max-width:700px)
 {
@@ -36,5 +68,10 @@ span.margin_section {
     .skills-div img
     {
         width: 100%;
+    }
+
+    .skill_item img
+    {
+        width: 60px;
     }
 }

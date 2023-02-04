@@ -228,5 +228,9 @@
         font-size: 19px;
     }
 
+    #experiences .experience .missions div p
+    {
+        font-size: 13px;
+    }
     
 }

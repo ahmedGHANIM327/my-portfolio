@@ -78,32 +78,6 @@
     cursor: pointer;
 }
 
-#projects .project_navbar
-{
-    width: 95%;
-    max-width: 1400px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom:10px;
-}
-
-.MuiAutocomplete-root.MuiAutocomplete-hasPopupIcon.filter_projects.css-1kpdewa-MuiAutocomplete-root {
-    max-width: 250px;
-    width: 50% !important;
-    min-width: 45%;
-}
-
-a.project_link {
-    background: #272c60;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    text-decoration: none;
-    padding: 2px 20px 0;
-    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
-    height: 50px;
-}
-
 /* Modale Project */
 .css-1t1j96h-MuiPaper-root-MuiDialog-paper
 {
@@ -126,9 +100,9 @@ a.project_link {
 
 .project_dialog img
 {
-    width : 50%;
-    min-width: 350px;
-    
+    width : 400px;
+    /*min-width: 350px;*/
+    max-width: 90%;
     margin-top : 15px;
 }
 
@@ -198,5 +172,10 @@ a.project_link {
     #projects .project_navbar
     {
         width: 350px;
+    }
+
+    .project_dialog p
+    {
+        font-size: 13px;
     }
 }

@@ -26,7 +26,7 @@
 .home-description
 {
     color : #ccd6f6;
-    font-size: clamp(20px, 8vw, 30px);
+    font-size: clamp(18px, 6vw, 30px);
     font-weight: 600;
     margin: 0px;
     line-height: 1.1;
