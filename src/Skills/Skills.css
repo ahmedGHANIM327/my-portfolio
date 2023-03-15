@@ -44,26 +44,66 @@ span.margin_section {
     padding: 15px;
 }
 
-.skill_item img
-{
-    filter: grayscale(100%);
-    transition: all 0.8s;
-    width: 120px;
-}
-
-.skill_item img:hover
-{
-    filter: grayscale(0);
-}
 .skill_item p
 {
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
     color: #272c60;
     font-size: 14px;
+    margin-block-end: 0;
 }
+
+/*-----------------------*/
+.skills_categorie
+{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+    border: 2px solid #de3448;
+    border-radius: 15px;
+    padding: 20px 0;
+    margin-bottom: 25px;
+    background-color: rgba(222,52,72,0.01);
+}
+
+.skills_categorie_title
+{
+    position: absolute;
+    top: 0;
+    left: 15px;
+    transform: translateY(-50%);
+    background-color: #de3448;
+    color: #fff;
+    font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    border-radius: 5px;
+    padding: 8px 12px;
+    margin-block: 0 !important;
+}
+
+.skill_item img
+{
+    /*filter: grayscale(100%);*/
+    transition: all 0.8s;
+    width: 80px;
+}
+
 /* Style for mobile */
 @media screen and (max-width:700px)
 {
+    .skills_categorie
+    {
+        padding-top: 30px;
+        margin-bottom: 45px;
+    }
+    .skills_categorie_title
+    {
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-size: 12px;
+        line-height: 1.4;
+    }
 
     .skills-div img
     {

@@ -32,6 +32,7 @@
     font-size: 20px;
     font-weight: 600;
     font-family:"SF Mono","Fira Code","Fira Mono","Roboto Mono",monospace;
+    text-align: center;
 }
 
 #footer p>a

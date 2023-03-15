@@ -114,7 +114,7 @@
 
 .project_dialog p
 {
-    padding : 2%;
+    padding : 2% 2% 0% 2%;
     text-align: justify;
     color: #272c60;
     margin-block : 0 !important;
@@ -151,7 +151,6 @@
 {
     #projects .projects
     {
-        width: 100%;
         max-width: 100%;
         justify-content: space-around;
     }

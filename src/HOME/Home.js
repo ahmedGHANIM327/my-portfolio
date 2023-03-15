@@ -32,8 +32,8 @@ export default function Home() {
                             <Button href={myresume} target="_blank" className="download-button" variant="outlined" endIcon={<DownloadIcon />}>
                                 Download Resume
                             </Button>
-                            <Button href="#contact" onClick={handleClick} className="contact-button" variant="contained" endIcon={<SendIcon />}>
-                                Contact Me
+                            <Button className="contact-button" variant="contained" endIcon={<SendIcon />}>
+                                <a href="#contact" onClick={handleClick}>Contact Me</a>
                             </Button>
                         </div>  
                     </Grid>

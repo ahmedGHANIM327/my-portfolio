@@ -16,7 +16,10 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 export default function Projects() {
 
     /* Modale Project */
-    const [selectedProject , setSelectedProject] = useState({"outils":[]});
+    const [selectedProject , setSelectedProject] = useState({
+        "description":'',
+        "outils":[]
+    });
 
     const [open, setOpen] = useState(false);
 
@@ -66,17 +69,17 @@ export default function Projects() {
             <div className="project_dialog">
                 <img src={selectedProject.image} />
                 <h2> {selectedProject.title} </h2>
-                <p className="description">
-                {selectedProject.description}
-                </p>
-                    <ul className="outils">
-                        {selectedProject.outils.map(outil =>
-                            <li>{outil}</li>
-                        )}
-                    </ul>
+                {selectedProject.description.split("<br>").map(e => {
+                        return <p className='description'>{e}</p>
+                })} 
+                <ul className="outils">
+                    {selectedProject.outils.map(outil =>
+                        <li>{outil}</li>
+                    )}
+                </ul>
                 <div className="actions">
-                    {selectedProject.live_preview !== "" && <a href={selectedProject.live_preview}><button> View Live Demo</button></a>}
-                    {selectedProject.code_source !== "" && <a href={selectedProject.code_source}><button> View Source Code</button></a>}
+                    {selectedProject.live_preview !== "" && <a href={selectedProject.live_preview} target='_blank'><button> View Live Demo</button></a>}
+                    {selectedProject.code_source !== "" && <a href={selectedProject.code_source} target='_blank'><button> View Source Code</button></a>}
                 </div>
             </div>
         </Dialog>

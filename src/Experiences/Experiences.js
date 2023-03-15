@@ -44,7 +44,7 @@ export default function Experiences() {
                         </div>
                         <div>
                             <ArrowRightIcon />
-                            <p> Front-End and Dashboarding development using Slate, HTML , CSS and Javascript.</p>
+                            <p> Front-End and Dashboarding development using Slate, HTML , CSS , Javascript and PostgreSQL.</p>
                         </div>
                         <div>
                             <ArrowRightIcon />
@@ -76,7 +76,7 @@ export default function Experiences() {
                     <div className="missions">
                         <div>
                             <ArrowRightIcon />
-                            <p> Develop a web application with Angular and Django.</p>
+                            <p> Develop a web application with Angular , Django and MongoDB.</p>
                         </div>
                        
                     </div>
